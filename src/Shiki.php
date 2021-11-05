@@ -82,9 +82,9 @@ class Shiki
         ];
 
         $process = new Process(
-            command: $command,
-            cwd: realpath(__DIR__ . '/../bin'),
-            timeout: null,
+            $command,
+            realpath(__DIR__ . '/../bin'),
+            null,
         );
 
         $process->run();

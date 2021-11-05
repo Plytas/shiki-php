@@ -46,7 +46,7 @@ class Shiki
     public function __construct(
         string $defaultTheme = 'nord'
     ) {
-		$this->defaultTheme = $this->defaultTheme;
+		$this->defaultTheme = $defaultTheme;
     }
 
     public function getAvailableThemes(): array

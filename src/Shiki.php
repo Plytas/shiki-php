@@ -8,6 +8,8 @@ use Symfony\Component\Process\Process;
 
 class Shiki
 {
+	protected string $defaultTheme;
+    
     public static function highlight(
         string $code,
         string $language = 'php',
@@ -42,8 +44,9 @@ class Shiki
     }
 
     public function __construct(
-        protected string $defaultTheme = 'nord'
+        string $defaultTheme = 'nord'
     ) {
+		$this->defaultTheme = $this->defaultTheme;
     }
 
     public function getAvailableThemes(): array
